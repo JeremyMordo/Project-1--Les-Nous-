@@ -1,11 +1,11 @@
 html{
-    height: 100vh;
+    height: 100%;
     overflow: visible;
 }
 
 body{
     background-color: black;
-    height: 100vh;
+    height: 100%;
 }
 
 header{
@@ -18,20 +18,17 @@ header{
     height: 10%;
 }
 
-.window{
+.window{  
+    position: relative;
     background: no-repeat url("images/mainBackground.jpg");
-    background-size:100%;
-    display : flex;
+    display: flex;
     justify-content: center;
     align-items: center;
+    background-size:100%;
     height: 60%;
     margin-right: 0;
     margin-left:0;
 }
-.windowback{
-    z-index:1;
-}
-
 .myInfo{
     display: flex;
     /* justify-content: space-between; */
@@ -45,34 +42,18 @@ header{
     flex-direction: column;
 }
 .cards{
-    position: relative;
-    z-index: 2;
+    position: absolute;
 }
-
-/* 
-.window{
-   background: no-repeat url("images/window.png");
-    background-size: 100%;
-    width :80%; 
-    height: auto;   
-    
-    
-}
-*/
-
-.windowback{
-    position: absolut;
-}
-
-.cards{
-    border :1px solid red;
+.card{
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
-    width : 30%;
-    top :0;
-    
+}
+.windowback{
+    display:flex;
+    align-self: center;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 h5{

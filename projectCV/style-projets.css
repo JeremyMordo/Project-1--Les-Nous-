@@ -1,0 +1,19 @@
+.imgproject{
+    width : 300px;
+    height: auto;
+}
+
+
+
+article {
+    display: flex;
+        
+}
+
+
+@media screen and (max-width: 540px){
+    article {  
+        display: flex ;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,42 @@
+
+body{
+    background-color: black;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+}
+
+main{
+    background-image: url("images/mainBackground.jpg");
+}
+
+.myInfo{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.myInfo ul{
+    list-style: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.myInfo ul li{
+    font-size: 40 px;
+}
+
+.window{
+    
+}
+
+@media screen and (max-width: 540px){
+    .container{
+        margin: auto 0 auto 0;
+        padding-right : 0;
+        padding-left : 0;
+    }
+}

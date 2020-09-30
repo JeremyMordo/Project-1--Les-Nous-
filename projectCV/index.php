@@ -10,43 +10,41 @@
 
 <body>
 
-    <div class="container img-fluid">
+    <div class="container container-fluid">
 
     <!----------------------------header--------------------------->
         <?php include "./header.php";?> 
 
 
     <!---------------------------contenu--------------------------->
-        <main>
-            <div class="window">
-
-                <div class="card" style="width: 18rem;">
+            <div class="window row">
+                <img class="windowback col-12" src="images/window.png">    
+                <div class="cards col-5">
                     <button class="btn btn-curriculum" type="button"><img alt="curriculum link" src="images/curriculum.png"><a href="./curriculum.php"></a></button>
                     <div class="card-body">
                         <h5 class="card-title">Curriculum</h5>
                     </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                <button class="btn btn-projects" type="button"><img alt="projects link" src="images/projects.png"><a href="./projects.php"></a></button>
+                    </div>
+                <div class="cards col-5">
+                    <button class="btn btn-projects" type="button"><img alt="projects link" src="images/projects.png"><a href="./projects.php"></a></button>
                     <div class="card-body">
-                        <h5 class="card-title">Projects</h5>
+                        <h5 class="card-title">Projets</h5>
+                    </div>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                <button class="btn btn-hobbies" type="button"><img alt="hobbies link" src="images/hobbies.png"><a href="./hobbies.php"></a></button>
+                <div class="cards col-5">
+                    <button class="btn btn-hobbies" type="button"><img alt="hobbies link" src="images/hobbies.png"><a href="./hobbies.php"></a></button>
                     <div class="card-body">
-                        <h5 class="card-title">Projects</h5>
+                        <h5 class="card-title">Hobbies</h5>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                <button class="btn btn-contact" type="button"><img alt="contact link" src="images/contact.png"><a href="./contact.php"></a></button>
+                <div class="cards col-5">
+                    <button class="btn btn-contact" type="button"><img alt="contact link" src="images/contact.png"><a href="./contact.php"></a></button>
                     <div class="card-body">
-                        <h5 class="card-title">Projects</h5>
+                        <h5 class="card-title">Contact</h5>
                     </div>
-                </div>
+               </div> 
             </div>
-    </main>
-
 
     <!---------------------------footer--------------------------->
     <?php include "./footer.php";?>

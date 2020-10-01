@@ -16,7 +16,25 @@
        
     <!---------------------------contenu--------------------------->
    
-            <div class="window row">
+        <div class="wrapper row">
+            <svg height="320" width="400" class="logo-triangle">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="100%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:rgb(50,50,50);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:black;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <filter id="dropshadow" height="130%">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+                    <feOffset dx="2" dy="2" result="offsetblur" />
+                    <feMerge>
+                        <feMergeNode/>
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+                <polygon points="0,0 400,0 200,300" stroke="#36e2f8" stroke-width="3" />
+            </svg>
+            <div class="grid"></div>
                 <img class="windowback row" src="images/window.png">
                 <div class="cards row">
                         <button class="card card1 col-6 btn btn-curriculum" type="button"><img alt="curriculum link" src="images/curriculum.png">
@@ -45,6 +63,7 @@
                         </div>
                     </div>
                 </div> 
+            </div>
             </div>
     <!---------------------------footer--------------------------->
     <?php include "./footer.php";?>

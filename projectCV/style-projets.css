@@ -1,0 +1,48 @@
+.imgproject{
+    width : 300px;
+    height: auto;
+}
+
+
+
+article {
+    display: flex;
+    justify-content: center;
+   
+        
+}
+
+
+section{
+    max-width: 40%;
+    margin:40px;
+}
+
+.div-img{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.text-project{
+    text-align: justify;
+}
+
+
+@media screen and (max-width: 540px){
+    article {  
+    flex-direction: column;
+    }
+    section{
+        margin: 10px;
+        min-width : 95%;
+    }
+    .div-img{
+        padding:0;
+        
+    }
+    
+}

@@ -8,6 +8,7 @@
 
 <main>
     <div class="container container-fluid">
+    <?php $nav_en_cours ='curriculum';?>
     <?php include "./header.php";?> 
     <div>
         <h1>Mes Projets<h1>
@@ -15,41 +16,41 @@
     </div>
     <article>
         <section>
-            <div>
+            <div class="div-img">
                 <img class="imgproject" alt="Time machine Hackermann" src="images/timemachine.gif">
             </div>
             <div><h3>Construction d'une time geek machine<h3></div>
             <div>
-                <p>Grâce à mes doigts de fée et à mon clavier de transport, j'ai réussi à hacker le temps et à envoyer Kung Fury dans le passé.</p>
+                <p class="text-project">Grâce à mes doigts de fée et à mon clavier de transport, j'ai réussi à hacker le temps et à envoyer Kung Fury dans le passé.</p>
             </div>
         </section>
         <section>
-            <div>
+            <div class="div-img">
                 <img class="imgproject" alt="Hackermann Robot" src="images/robot.gif">
             </div>
             <div><h3>Développement de robot<h3></div>
             <div>
-                <p>J'ai développé un algorithme du Turfu, qui me permet de me transformer en Mécha.</p>
+                <p class="text-project">J'ai développé un algorithme du Turfu, qui me permet de me transformer en Mécha.</p>
             </div>
         </section>
     </article>
     <article>
         <section>
-            <div>
+            <div class="div-img">
                 <img class="imgproject" alt="Phone Hackermann" src="images/telephone.gif">
             </div>
             <div><h3>Fabrication de téléphone<h3></div>
             <div>
-                <p>J'ai conçu de mes 10 doigts un téléphone portable qui a une capacité de 645 canaux, 10 numéros abrégés et un vérrouillage électronique.</p>
+                <p class="text-project">J'ai conçu de mes 10 doigts un téléphone portable qui a une capacité de 645 canaux, 10 numéros abrégés et un vérrouillage électronique.</p>
             </div>
         </section>
         <section>
-            <div>
+            <div class="div-img">
                 <img class="imgproject" alt="Thor Hackermann" src="images/thor.gif">
             </div>
             <div><h3>Projet top secret en cours...<h3></div>
             <div>
-                 <p>Utiliser la puissance du marteau de Thor pour améliorer le voyage temporel.</p>
+                 <p class="text-project">Utiliser la puissance du marteau de Thor pour améliorer le voyage temporel.</p>
             </div>
         </section>
     </article>

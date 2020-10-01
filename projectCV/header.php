@@ -17,7 +17,7 @@
                     <a href="./curriculum.php" class="btn btn-outline-light" <?php if ($nav_en_cours == 'Curriculum') {echo ' id="en-cours"';} ?>>Curriculum</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./curriculum.php" class="btn btn-outline-light" <?php if ($nav_en_cours == 'Projects') {echo ' id="en-cours"';} ?>>Projects</a>
+                    <a href="./projects.php" class="btn btn-outline-light" <?php if ($nav_en_cours == 'Projects') {echo ' id="en-cours"';} ?>>Projects</a>
                 </li>
                 <li class="nav-item">
                     <a href="./hobbies.php" class="btn btn-outline-light" <?php if ($nav_en_cours == 'Hobbies') {echo ' id="en-cours"';} ?>>Hobbies</a>

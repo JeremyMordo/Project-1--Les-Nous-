@@ -8,7 +8,7 @@
 
 <main>
     <div class="container container-fluid">
-    <?php $nav_en_cours ='curriculum';?>
+    <?php $nav_en_cours ='projects';?>
     <?php include "./header.php";?> 
     <div>
         <h1>Mes Projets<h1>

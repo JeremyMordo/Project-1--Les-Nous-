@@ -22,8 +22,7 @@ header{
     height: 10%;
 }
 
-.window{  
-    background: no-repeat url("./images/mainBackground.jpg");
+.wrapper{  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,6 +43,7 @@ header{
 }
 .cards{
     position: absolute;
+    z-index: 4;
 }
 .card{
     display: flex;
@@ -63,6 +63,7 @@ header{
     display:flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 3;
 }
 .windowbackHobbie{
     width: 400px;
@@ -86,10 +87,70 @@ footer{
     border :1px solid red;
     height : 10%;
 }
+
 @media screen and (max-width: 540px){
     .container{
         margin: auto 0 auto 0;
         padding-right : 0;
         padding-left : 0;
     }
+}
+
+@import "compass/css3";
+.wrapper {
+  background: #000;
+  background:  
+  radial-gradient(ellipse at center, rgba(127,0,173,0.6) 0%,
+  rgba(0,0,0,0.8) 60%, 
+  rgba(0,0,0,1) 90%), 
+  url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/31787/stars.jpg);
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  perspective: 1200px; 
+}
+.grid {
+background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0px, rgba(54, 226, 248, 0.5) 0%, rgba(54, 226, 248, 0.5) 3px, rgba(0, 0, 0, 0) 0px), linear-gradient(90deg, rgba(0, 0, 0, 0) 0px, rgba(54, 226, 248, 0.5) 0%, rgba(54, 226, 248, 0.5) 3px, rgba(0, 0, 0, 0) 0px); 
+    background-size: 4em 4em, 4em 4em;
+  background-color: black;
+  border-top: 5px solid rgb(209,0,177);
+  box-shadow: 0 -25px 45px rgb(209,0,177);
+  height: 40em;
+  transform: scale(1.26) rotateX(80deg);
+  position: absolute;
+  width: 100%;
+  z-index:1;
+  &:after {
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 50%,rgba(0,0,0,1) 95%);
+    content: '';
+     height: 100%;
+     position: absolute;
+     width: 100%;
+   }
+  &:before {
+   background: radial-gradient(ellipse at center, rgba(0,0,0,0) 30%,rgba(209,0,177,0.5) 90%);     
+   content: '';
+   height: 100%;
+   position: absolute;
+   width: 100%;
+  }
+}
+.logo-triangle {
+  //animation: dash 6s linear forwards;
+  animation: dash 6s linear backwards;
+  animation-iteration-count: infinite;
+  fill: url(#grad1);
+  filter :url(#dropshadow);
+  left: 50%;
+  margin-left: -200px;
+  position: absolute;
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  top: 6em;
+  z-index: 2;  
+}
+@keyframes dash {
+  to{
+    stroke-dashoffset: 0;
+  } 
 }

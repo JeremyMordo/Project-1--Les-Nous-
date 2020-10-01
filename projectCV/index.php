@@ -11,8 +11,11 @@
 <body>
     <div class="container container-fluid">
     <!----------------------------header--------------------------->
-        <?php include "./header.php";?> 
+         <?php $nav_en_cours ='Hackerman';?>
+         <?php include "./header.php";?> 
+       
     <!---------------------------contenu--------------------------->
+   
             <div class="window row">
                 <img class="windowback row" src="images/window.png">
                 <div class="cards row">

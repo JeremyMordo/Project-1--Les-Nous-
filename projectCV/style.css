@@ -2,16 +2,20 @@ html{
     height: 100%;
     overflow: visible;
 }
-
 body{
     background-color: black;
     height: 100%;
+}
+#en-cours{
+    color: red;
 }
 
 header{
     height: 20%;
 }
-
+.row{
+    margin:0;
+}
 .navbar{
     display: flex;
     justify-content: flex-start;
@@ -19,8 +23,7 @@ header{
 }
 
 .window{  
-    position: relative;
-    background: no-repeat url("images/mainBackground.jpg");
+    background: no-repeat url("./images/mainBackground.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,17 +32,15 @@ header{
     margin-right: 0;
     margin-left:0;
 }
-.myInfo{
-    display: flex;
-    /* justify-content: space-between; */
-}
-
 .myInfo ul{
     list-style: none;
     color: white;
     display: flex;
     justify-content: center;
+}
+.headerUl{
     flex-direction: column;
+    align-items: center;
 }
 .cards{
     position: absolute;
@@ -49,21 +50,42 @@ header{
     justify-content: center;
     align-items: center;
 }
+.windowHobbie
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.windowbackHobbie:nth-child(2n){
+    align-self: flex-end;
+}
 .windowback{
     display:flex;
-    align-self: center;
-    margin-left: 0;
-    margin-right: 0;
+    flex-direction: column;
+    justify-content: center;
 }
-
+.windowbackHobbie{
+    width: 400px;
+    height: 280px;
+    background: url("./images/window.png");
+    background-size: 100%;  
+    display: flex;
+    align-items: center;
+    padding-top: 1em;
+}
+.hobbieDeux{
+    align-self: flex-end;
+}
+h4{
+    color: red;
+}
 h5{
     font-size: 0.7em;
 }
-
 footer{
     border :1px solid red;
     height : 10%;
-
+}
 @media screen and (max-width: 540px){
     .container{
         margin: auto 0 auto 0;

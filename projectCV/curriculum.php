@@ -13,32 +13,56 @@
     <div class="container container-fluid">
 
         <!----------------------------header--------------------------->
+        <?php $nav_en_cours ='curriculum';?>
         <?php include "./header.php";?> 
 
         <!---------------------------main--------------------------->
         <main>
-            <h1>Curriculum</h1>
-            
-                <button type="button" class="collapsible"><h2>Rebellatrix quam ut et monstrat.</h2></button>
-                <div class="content">
-                    <p class="text">Tempore quo primis auspiciis in mundanum fulgorem surgeret victura dum erunt homines Roma, ut augeretur sublimibus incrementis, foedere pacis aeternae Virtus convenit atque Fortuna plerumque dissidentes, quarum si altera defuisset, ad perfectam non venerat summitatem.
-                    </p>
+            <!-- first section -->
+            <section class="background" id="toRemove" onclick="remove(this)">
+                <div class="titleSection"> 
+                    <h2>Cursus</h2>
+                    <button type="button"><img class="crossButton" src="images/crossButton.png"></button>
                 </div>
-            
-            <section class="background">
-                <h2>Rebellatrix quam ut et monstrat.</h2>
-                <ul>
-                    <li>
-                        <p class="text">hacking</p>
-                        <progress max="100" value="80"></progress>
-                    </li>
-                    <li>
-                        <p class="text">hacking</p>
-                        <progress max="100" value="80"></progress>
-                    </li>            
-                </ul>
+                    <p class="text">Dumque ibi diu moratur commeatus opperiens, quorum translationem ex Aquitania verni imbres solito crebriores prohibebant auctique torrentes, Herculanus advenit protector domesticus, Hermogenis ex magistro equitum filius, apud Constantinopolim, ut supra rettulimus, populari quondam turbela discerpti. quo verissime referente quae Gallus egerat, damnis super praeteritis maerens et futurorum timore suspensus angorem animi quam diu potuit emendabat.</p>
             </section>
+
+            <!-- second section -->
+            <section class="background" id="toRemove" onclick="remove(this)">
+            <div class="titleSection"> 
+                    <h2>Skills</h2>
+                    <button type="button"><img class="crossButton" src="images/crossButton.png"></button>
+                </div>
+                <div class="containerSkill">
+                    <div class="skills">
+                            <p class="text">Networking</p>
+                            <progress max="100" value="95"></progress>
+                    </div>
+                    <div class="skills">
+                            <p class="text">Programming</p>
+                            <progress max="100" value="80"></progress>
+                    </div>
+                    <div class="skills">
+                            <p class="text">Database</p>
+                            <progress max="100" value="50"></progress>
+                    </div>
+                    <div class="skills">
+                            <p class="text">Scripting</p>
+                            <progress max="100" value="70"></progress>
+                    </div>
+                    <div class="skills">
+                            <p class="text">Cryptography</p>
+                            <progress max="100" value="80"></progress>
+                    </div>
+                    <div class="skills">
+                            <p class="text">Gipher</p>
+                            <progress max="100" value="95"></progress>
+                    </div>
+                </div>
+            </section>
+
         </main>
+
         <!---------------------------footer--------------------------->
         <?php include "./footer.php";?>
     </div>
@@ -48,20 +72,13 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script>
-    var coll = document.getElementsByClassName("collapsible");
-var i;
+    
+    let crossButton = document.querySelectorAll('button');
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
+    function remove() {
+        const element = document.getElementById("toRemove");
+        element.remove();
     }
-  });
-}
 </script>
 </body>
 </html>

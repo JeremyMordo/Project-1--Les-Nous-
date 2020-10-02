@@ -2,8 +2,11 @@
     <div class="myInfo row">
         <img class="img-fluid col" alt="A photo of HackerMan" src="images/hackerman.png">
         <ul class="headerUl col">
-            <li>HackerMan</li>
-            <li>Hacker presque professionnel</li>
+            <li class="text-danger"><h1>Jacky HackerMan</h1></li>
+            <br>
+            <li>I'm a professional</li>
+            <li>Call me : 666-666</li>
+            <li>Mail me : livingGod@me.com</li>
         </ul>
     </div>
     <nav class="navbar navbar-expand-* navbar-dark bg-dark">

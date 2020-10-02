@@ -45,22 +45,31 @@
                         </a>
                     </button>                  
                     <div class="card card2 col-6">
-                        <button class="btn btn-projects" type="button"><img alt="projects link" src="images/projects.png"><a href="./projects.php"></a></button>
-                        <div class="card-body">
-                            <h5 class="card-title">Projets</h5>
-                        </div>
+                        <button class="btn btn-projects" type="button"><img alt="projects link" src="images/projects.png">
+                        <a href="./projects.php">
+                            <div class="card-body">
+                                <h5 class="card-title">Projets</h5>
+                            </div>
+                        </a>
+                        </button>
                     </div>
                     <div class="card card3 col-6">
-                        <button class="btn btn-hobbies" type="button"><img alt="hobbies link" src="images/hobbies.png"><a href="./hobbies.php"></a></button>
-                        <div class="card-body">
-                            <h5 class="card-title">Hobbies</h5>
-                        </div>
+                        <button class="btn btn-hobbies" type="button"><img alt="hobbies link" src="images/hobbies.png">
+                        <a href="./hobbies.php">
+                            <div class="card-body">
+                                <h5 class="card-title">Hobbies</h5>
+                            </div>
+                        </a>
+                        </button>
                     </div>
                     <div class="card card4 col-6">
-                        <button class="btn btn-contact" type="button"><img alt="contact link" src="images/contact.png"><a href="./contact.php"></a></button>
-                        <div class="card-body">
-                            <h5 class="card-title">Contact</h5>
-                        </div>
+                        <button class="btn btn-contact" type="button"><img alt="contact link" src="images/contact.png">
+                        <a href="./contact.php">
+                            <div class="card-body">
+                                <h5 class="card-title">Contact</h5>
+                            </div>
+                        </a>
+                        </button>
                     </div>
                 </div> 
             </div>

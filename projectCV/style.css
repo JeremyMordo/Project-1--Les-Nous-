@@ -9,7 +9,6 @@ body{
 #en-cours{
     color: red;
 }
-
 header{
     height: 20%;
 }
@@ -21,7 +20,6 @@ header{
     justify-content: flex-start;
     height: 10%;
 }
-
 .wrapper{  
     display: flex;
     justify-content: center;
@@ -50,29 +48,18 @@ header{
     justify-content: center;
     align-items: center;
 }
-.windowHobbie
-{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.windowbackHobbie:nth-child(2n){
-    align-self: flex-end;
-}
 .windowback{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 3;
+    z-index:2;
 }
 .windowbackHobbie{
     width: 400px;
     height: 280px;
     background: url("./images/window.png");
-    background-size: 100%;  
+    background-size: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding-top: 1em;
+    z-index: 2;
 }
 .hobbieDeux{
     align-self: flex-end;
@@ -95,7 +82,6 @@ footer{
         padding-left : 0;
     }
 }
-
 @import "compass/css3";
 .wrapper {
   background: #000;
@@ -119,7 +105,7 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0px, rgba(54, 226, 248, 0.5
   transform: scale(1.26) rotateX(80deg);
   position: absolute;
   width: 100%;
-  z-index:1;
+  z-index: 0;
   &:after {
     background: linear-gradient(to bottom, rgba(0,0,0,0) 50%,rgba(0,0,0,1) 95%);
     content: '';
@@ -147,7 +133,7 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0px, rgba(54, 226, 248, 0.5
   stroke-dasharray: 1200;
   stroke-dashoffset: 1200;
   top: 6em;
-  z-index: 2;  
+  z-index: 1;  
 }
 @keyframes dash {
   to{

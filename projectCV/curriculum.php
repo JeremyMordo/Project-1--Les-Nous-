@@ -13,7 +13,7 @@
     <div class="container container-fluid">
 
         <!----------------------------header--------------------------->
-        <?php $nav_en_cours ='curriculum';?>
+        <?php $nav_en_cours ='Curriculum';?>
         <?php include "./header.php";?> 
 
         <!---------------------------main--------------------------->

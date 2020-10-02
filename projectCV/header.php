@@ -1,11 +1,11 @@
 <header>
-    <div class="myInfo row">
-        <img class="img-fluid col" alt="A photo of HackerMan" src="images/hackerman.png">
+    <div class="myInfo row justify-content-space-between">
+        <img class="img-fluid col" alt="A photo of HackerMan" src="./images/hackerman.png">
         <ul class="headerUl col">
             <li class="text-danger"><h1>Jacky HackerMan</h1></li>
             <br>
             <li>I'm a professional</li>
-            <li>Call me : 666-666</li>
+            <li>Call me : 666-666-6666</li>
             <li>Mail me : livingGod@me.com</li>
         </ul>
     </div>
@@ -31,5 +31,4 @@
             </ul>
         </div>
     </nav>
-
 </header>

@@ -32,17 +32,28 @@
             <polygon points="0,0 400,0 200,300" stroke="#36e2f8" stroke-width="3">            
         </svg>
         <div class="grid"></div>
-        <div class="windowbackHobbie row">
-            <img src="./images/curling.gif" width=280em height=230em>
-            <h4></h4>
-        </div>
-        <div class="windowbackHobbie row">
-            <img src="./images/jeuxvideo.gif" width=280em height=230em>
-            <h4></h4>
-        </div>
-        <div class="windowbackHobbie row">
-            <img src="./images/curling.gif" width=280em height=230em>
-            <h4></h4>
+        <div class="windowbackHobbies col justify-content-flex-start">
+            <div class="windowbackHobbie1 row justify-content-flex-start">
+                <img src="./images/curling.gif" width=280em height=230em>
+                <div class="row justify-content-center">
+                    <h4>Curling</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est perspiciatis atque fuga sunt omnis ab. Expedita alias quas at aperiam incidunt a. Ducimus mollitia possimus voluptatibus praesentium beatae, repellendus debitis!</p>
+                </div>
+                </div>
+            <div class="windowbackHobbie2 row">
+                <div class="row justify-content-center">
+                <h4>Video Games</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid libero sequi ratione dolore delectus maiores, maxime sit in labore cum? Officia quasi expedita dicta et rerum nobis maxime quidem repellendus!</p>
+                </div>    
+                <img src="./images/jeuxvideo.gif" width=280em height=238em>
+            </div>
+            <div class="windowbackHobbie3 row">
+                <img src="./images/cuisine.gif" width=280em height=230em>
+                <div class="row justify-content-center">
+                <h4>Cooking</h4>
+                <p class="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deleniti nihil cumque sit, quae pariatur quis. Fugiat corporis esse quam excepturi quos qui quae, nam doloremque dolores dolore! Similique, magnam?</p>
+                </div>
+            </div>
         </div>
     </div>
     <!---------------------------footer--------------------------->

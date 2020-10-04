@@ -46,7 +46,6 @@ align-items                 : center;
 position                    : absolute;
 z-index                     : 4;
 width                       : 50%;
-height                      : 50%;
 }
 .card{
 display                     : flex;
@@ -55,23 +54,17 @@ align-items                 : center;
 }
 .windowback{
 z-index                     : 2;
-width                       : 80%
+width                       : 70%;
 }
-.windowbackHobbie{
-width                       : 400px;
-height                      : 280px;
-background                  : url("./images/window.png");
-background-size             : 100%;
-display                     : flex;
-justify-content             : center;
-align-items                 : center;
+.windowbackHobbies{
 z-index                     : 2;
+padding: 0;
+}
+.windowbackHobbie1, .windowbackHobbie2, .windowbackHobbie3{
+	flex-wrap: nowrap;
 }
 .hobbieDeux{
 align-self                  : flex-end;
-}
-h4{
-color                       : red;
 }
 h5{
 font-size                   : 0.7em;
@@ -80,7 +73,7 @@ font-size                   : 0.7em;
 {
 	display: inline-block;
 	border-radius: 4px;
-	background-color: white;
+	background-color: black;
 	border: none;
 	text-align: center;
 	font-size: 28px;
@@ -98,6 +91,7 @@ font-size                   : 0.7em;
 .btn-footer span:after
 {
 	content: '\00bb';
+	color: turquoise;
 	position: absolute;
 	opacity: 0;
 	top: 0;
@@ -114,12 +108,29 @@ font-size                   : 0.7em;
 	right: 0;
 }
 @media screen and (max-width: 540px){
-.container{
-margin                      : auto 0 auto 0;
-padding-right               : 0;
-padding-left                : 0;
+	.container{
+	margin                      : auto 0 auto 0;
+	padding-right               : 0;
+	padding-left                : 0;
+	}
 }
+@media screen and (max-width: 768px){
+	.img-fluid{
+		display:none;
+		}
+	.windowback{
+		height: 540px;
+		}
+	.card1{
+		margin-top: 13px;
+	}
 }
+@media screen and (min-width: 769px){
+	.img-fluid2{
+		display:none;
+	}
+}
+
 @import "compass/css3";
 .wrapper {
 background                  : #000;
@@ -129,7 +140,7 @@ rgba(0,0,0,0.8) 60%,
 rgba(0,0,0,1) 90%), 
 url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/31787/stars.jpg);
 background-size             : cover;
-height                      : 920px;
+height                      : 100%;
 overflow                    : hidden;
 perspective                 : 1200px;
 }

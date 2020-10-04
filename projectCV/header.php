@@ -1,6 +1,7 @@
 <header>
     <div class="myInfo row justify-content-space-between">
         <img class="img-fluid col" alt="A photo of HackerMan" src="./images/hackerman.png">
+        <img class="img-fluid2 col" alt="A photo of HackerMan-mini" src="./images/hackerman-mini.jpeg">
         <ul class="headerUl col">
             <li class="text-danger"><h1>Jacky HackerMan</h1></li>
             <br>

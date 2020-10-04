@@ -34,7 +34,7 @@
             <div class="grid"></div>
             <img class="windowback row" src="images/window.png">
             <div class="cards row">
-                <div class="card card1 col-6">
+                <div class="card card1 col-md-6 col-12">
                     <a href="./curriculum.php">
                         <button class="btn btn-curriculum" type="button"><img alt="curriculum link" src="images/curriculum.png">
                             <div class="card-body">
@@ -43,7 +43,7 @@
                         </button>
                     </a>                    
                 </div> 
-                <div class="card card2 col-6">
+                <div class="card card2 col-md-6 col-12">
                     <a href="./projects.php">
                         <button class="btn btn-projects" type="button"><img alt="projects link" src="images/projects.png">
                             <div class="card-body">
@@ -52,7 +52,7 @@
                         </button>
                     </a>
                 </div>
-                <div class="card card3 col-6">
+                <div class="card card3 col-md-6 col-12">
                     <a href="./hobbies.php">
                         <button class="btn btn-hobbies" type="button"><img alt="hobbies link" src="images/hobbies.png">
                             <div class="card-body">
@@ -61,7 +61,7 @@
                         </button>
                     </a>
                 </div>
-                <div class="card card4 col-6">
+                <div class="card card4 col-md-6 col-12">
                    <a href="./contact.php">
                         <button class="btn btn-contact" type="button"><img alt="contact link" src="images/contact.png">
                             <div class="card-body">

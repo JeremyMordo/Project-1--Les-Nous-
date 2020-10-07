@@ -1,0 +1,53 @@
+.formtext {
+    font                : Courrier;
+    font-size           : 0.8em;
+    line-height         : 0.6em;
+  }
+  .screen {
+    border              : solid 2px blue;
+    background-image    : url(".src/back.jpeg");
+    display             : flex;
+    justify-content     : center;
+    z-index: 2;
+  }
+  .windowform {
+    display             : inline-block;
+    background-color    : black;
+    border              : solid 2px red;
+    margin              : 10px;
+    color               : #dedb5b;
+    border              : ridge 4pt lightgray;
+    border-top          : solid 22px lightgrey;
+  }
+  .windowhack {
+    background-color    : black;
+    color               : #dedb5b;
+    display             : none;
+    z-index             : 4;
+  }
+  .programList {
+    list-style          : none;
+    text-indent         : -40px;
+  }
+  .command {
+    border              : 0;
+    background-color    : black;
+  }
+  #an15 {
+    display             : none;
+  }
+  #email {
+    display             : none;
+  }
+  #an16 {
+    display             : none;
+  }
+  #company {
+    display             : none;
+  }
+  #an17 {
+    display             : none;
+  }
+  #describe {
+    display             : none;
+  }

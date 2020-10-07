@@ -1,8 +1,21 @@
+
 /*<-------Projects page--------->*/
 
 .articleprojet {
     display: flex;
     justify-content: center;
+
+.imgproject{
+    width                     : 300px;
+    height                    : auto;
+}
+
+
+article {
+    display                   : flex;
+    justify-content           : center;
+    z-index                   : 2;
+
 }
 
 section{
@@ -11,7 +24,7 @@ section{
 }
 
 .div-img{
-    text-align: center;
+    text-align                : center;
 }
 
 .h3projects{
@@ -50,6 +63,15 @@ section{
 
 .password {
     width:90%;
+}
+  
+h3{
+    text-align                : center;
+    margin-top                : 10px;
+}
+
+.text-project{
+    text-align                : justify;
 }
 
 .img-thor{
@@ -91,14 +113,14 @@ section{
 
 @media screen and (max-width: 540px){
     article {  
-    flex-direction: column;
+    flex-direction            : column;
     }
     section{
-        margin: 10px;
-        min-width : 95%;
+        margin                : 10px;
+        min-width             : 95%;
     }
     .div-img{
-        padding:0;
+        padding               : 0;
         
     }
     

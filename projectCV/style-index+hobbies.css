@@ -1,0 +1,205 @@
+:root{
+	--dark-background       : black;
+	--light-background      : #44414a;
+	--primary-text-color    : rgb(209,0,177);
+	--secondary-text-color  : rgba(54, 226, 248, 0.5);
+	--light-text-color      : whitesmoke;
+}
+html{
+height                      : 100%;
+overflow                    : visible;
+}
+body{
+background-color            : var(--dark-background);
+height                      : 100%;
+}
+.superTitle {
+	font-family: 'Oswald', sans-serif;
+color						:  var(--primary-text-color);
+}
+.img-fluid{
+padding                     : 0;
+}
+#en-cours{
+color                       : var(--primary-text-color);
+}
+header{
+height                      : 20%;
+}
+.row{
+margin                      : 0;
+}
+.navbar{
+display                     : flex;
+justify-content             : flex-start;
+height                      : 10%;
+}
+.logoImage{
+width						: 10em; 
+}
+.wrapper{  
+display                     : flex;
+justify-content             : center;
+align-items                 : center;
+background-size             : 100%;
+height                      : 60%;
+margin-right                : 0;
+margin-left                 : 0;
+}
+.myInfo ul{
+list-style                  : none;
+color                       : var(--light-text-color);
+display                     : flex;
+justify-content             : center;
+}
+.headerUl{
+flex-direction              : column;
+align-items                 : center;
+}
+.cards{
+position                    : absolute;
+z-index                     : 4;
+width                       : 50%;
+}
+.card{
+display                     : flex;
+justify-content             : center;
+align-items                 : center;
+}
+.windowback{
+z-index                     : 2;
+width                       : 70%;
+}
+.windowbackHobbies{
+z-index                     : 2;
+padding: 0;
+}
+.windowbackHobbie1, .windowbackHobbie2, .windowbackHobbie3{
+	flex-wrap: nowrap;
+}
+.hobbieDeux{
+align-self                  : flex-end;
+}
+h5{
+font-size                   : 0.7em;
+}
+.btn-footer
+{
+	display: inline-block;
+	border-radius: 4px;
+	background-color: var(--dark-background);
+	border: none;
+	text-align: center;
+	font-size: 28px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
+.btn-footer span 
+{
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+.btn-footer span:after
+{
+	content: '\00bb';
+	color: var(--secondary-text-color);
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 1s;
+}
+.btn-footer:hover span
+{
+	padding-right: 25px;
+}
+.btn-footer:hover span:after 
+{
+	opacity: 1;
+	right: 0;
+}
+@media screen and (max-width: 540px){
+	.container{
+	margin                      : auto 0 auto 0;
+	padding-right               : 0;
+	padding-left                : 0;
+	}
+}
+@media screen and (max-width: 768px){
+	.img-fluid{
+		display:none;
+		}
+	.windowback{
+		height: 540px;
+		}
+	.card1{
+		margin-top: 13px;
+	}
+}
+@media screen and (min-width: 769px){
+	.img-fluid2{
+		display:none;
+	}
+}
+
+@import "compass/css3";
+.wrapper {
+background                  : var(--dark-background);
+background                  : 
+radial-gradient(ellipse at center, rgba(127,0,173,0.6) 0%,
+rgba(0,0,0,0.8) 60%, 
+rgba(0,0,0,1) 90%), 
+url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/31787/stars.jpg);
+background-size             : cover;
+height                      : 100%;
+overflow                    : hidden;
+perspective                 : 1200px;
+}
+.grid {
+background                  : linear-gradient(180deg, rgba(0, 0, 0, 0) 0px, rgba(54, 226, 248, 0.5) 0%, rgba(54, 226, 248, 0.5) 3px, rgba(0, 0, 0, 0) 0px), linear-gradient(90deg, rgba(0, 0, 0, 0) 0px, rgba(54, 226, 248, 0.5) 0%, rgba(54, 226, 248, 0.5) 3px, rgba(0, 0, 0, 0) 0px);
+background-size             : 4em 4em, 4em 4em;
+background-color            : var(--dark-background);
+border-top                  : 5px solid var(--primary-text-color) ;
+box-shadow                  : 0 -25px 45px var(--primary-text-color) ;
+height                      : 80em;
+transform                   : scale(1.26) rotateX(80deg);
+position                    : absolute;
+width                       : 100%;
+z-index                     : 0;
+&:after {
+background                  : linear-gradient(to bottom, rgba(0,0,0,0) 50%,rgba(0,0,0,1) 95%);
+content                     : '';
+height                      : 100%;
+position                    : absolute;
+width                       : 100%;
+}
+&:before {
+background                  : radial-gradient(ellipse at center, rgba(0,0,0,0) 30%,rgba(209,0,177,0.5) 90%);
+content                     : '';
+height                      : 100%;
+position                    : absolute;
+width                       : 100%;
+}
+}
+.logo-triangle {
+//animation: dash 6s linear forwards;
+animation                   : dash 6s linear backwards;
+animation-iteration-count   : infinite;
+fill                        : url(#grad1);
+filter                      : url(#dropshadow);
+left                        : 50%;
+margin-left                 : -200px;
+position                    : absolute;
+stroke-dasharray            : 1200;
+stroke-dashoffset           : 1200;
+top                         : 6em;
+z-index                     : 1;
+}
+@keyframes dash {
+to{
+stroke-dashoffset           : 0;
+} 
+}

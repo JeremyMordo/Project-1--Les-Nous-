@@ -35,23 +35,23 @@
         <div class="windowbackHobbies col justify-content-flex-start">
             <div class="windowbackHobbie1 row justify-content-flex-start">
                 <img src="./images/curling.gif" width=280em height=230em>
-                <div class="row justify-content-center">
-                    <h4>Curling</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est perspiciatis atque fuga sunt omnis ab. Expedita alias quas at aperiam incidunt a. Ducimus mollitia possimus voluptatibus praesentium beatae, repellendus debitis!</p>
+                <div class="col justify-content-center">
+                    <h3>Curling</h3>
+                    <p>Curling content.</p>
                 </div>
                 </div>
             <div class="windowbackHobbie2 row">
-                <div class="row justify-content-center">
-                <h4>Video Games</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid libero sequi ratione dolore delectus maiores, maxime sit in labore cum? Officia quasi expedita dicta et rerum nobis maxime quidem repellendus!</p>
+                <div class="col justify-content-center">
+                <h3>Video Games</h3>
+                <p>Video Games content.</p>
                 </div>    
                 <img src="./images/jeuxvideo.gif" width=280em height=238em>
             </div>
             <div class="windowbackHobbie3 row">
                 <img src="./images/cuisine.gif" width=280em height=230em>
-                <div class="row justify-content-center">
-                <h4>Cooking</h4>
-                <p class="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deleniti nihil cumque sit, quae pariatur quis. Fugiat corporis esse quam excepturi quos qui quae, nam doloremque dolores dolore! Similique, magnam?</p>
+                <div class="col justify-content-center">
+                <h3>Cooking</h3>
+                <p>Cooking content.</p>
                 </div>
             </div>
         </div>

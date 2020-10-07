@@ -69,9 +69,6 @@ padding: 0;
 .hobbieDeux{
 align-self                  : flex-end;
 }
-h5{
-font-size                   : 0.7em;
-}
 .btn-footer
 {
 	display: inline-block;
@@ -122,15 +119,22 @@ font-size                   : 0.7em;
 		display:none;
 		}
 	.windowback{
-		height: 540px;
+		height: 37em;
 		}
-	.card1{
-		margin-top: 13px;
+	.cards{
+		padding-top: 1.5em;
+	}
+	.nav{
+		display: flex;
+		flex-direction : column;
 	}
 }
 @media screen and (min-width: 769px){
 	.img-fluid2{
 		display:none;
+	}
+	.navbar-collapse{
+		flex-basis: 0%;
 	}
 }
 

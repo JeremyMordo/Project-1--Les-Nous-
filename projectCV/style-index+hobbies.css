@@ -14,7 +14,7 @@ background-color            : var(--dark-background);
 height                      : 100%;
 }
 .superTitle {
-	font-family: 'Oswald', sans-serif;
+font-family					: 'Oswald', sans-serif;
 color						:  var(--primary-text-color);
 }
 .img-fluid{

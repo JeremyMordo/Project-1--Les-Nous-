@@ -6,6 +6,10 @@ body{
 background-color            : black;
 height                      : 100%;
 }
+h1 {
+font-family					: 'Oswald', sans-serif;
+color						:  rgb(209,0,177);
+}
 .img-fluid{
 padding                     : 0;
 }

@@ -1,16 +1,27 @@
+:root{
+	--dark-background       : black;
+	--light-background      : #44414a;
+	--primary-text-color    : rgb(209,0,177);
+	--secondary-text-color  : rgba(54, 226, 248, 0.5);
+	--light-text-color      : whitesmoke;
+}
 html{
 height                      : 100%;
 overflow                    : visible;
 }
 body{
-background-color            : black;
+background-color            : var(--dark-background);
 height                      : 100%;
+}
+.superTitle {
+	font-family: 'Oswald', sans-serif;
+color						:  var(--primary-text-color);
 }
 .img-fluid{
 padding                     : 0;
 }
 #en-cours{
-color                       : red;
+color                       : var(--primary-text-color);
 }
 header{
 height                      : 20%;
@@ -37,7 +48,7 @@ margin-left                 : 0;
 }
 .myInfo ul{
 list-style                  : none;
-color                       : white;
+color                       : var(--light-text-color);
 display                     : flex;
 justify-content             : center;
 }
@@ -76,7 +87,7 @@ font-size                   : 0.7em;
 {
 	display: inline-block;
 	border-radius: 4px;
-	background-color: black;
+	background-color: var(--dark-background);
 	border: none;
 	text-align: center;
 	font-size: 28px;
@@ -94,7 +105,7 @@ font-size                   : 0.7em;
 .btn-footer span:after
 {
 	content: '\00bb';
-	color: turquoise;
+	color: var(--secondary-text-color);
 	position: absolute;
 	opacity: 0;
 	top: 0;
@@ -136,7 +147,7 @@ font-size                   : 0.7em;
 
 @import "compass/css3";
 .wrapper {
-background                  : #000;
+background                  : var(--dark-background);
 background                  : 
 radial-gradient(ellipse at center, rgba(127,0,173,0.6) 0%,
 rgba(0,0,0,0.8) 60%, 
@@ -150,9 +161,9 @@ perspective                 : 1200px;
 .grid {
 background                  : linear-gradient(180deg, rgba(0, 0, 0, 0) 0px, rgba(54, 226, 248, 0.5) 0%, rgba(54, 226, 248, 0.5) 3px, rgba(0, 0, 0, 0) 0px), linear-gradient(90deg, rgba(0, 0, 0, 0) 0px, rgba(54, 226, 248, 0.5) 0%, rgba(54, 226, 248, 0.5) 3px, rgba(0, 0, 0, 0) 0px);
 background-size             : 4em 4em, 4em 4em;
-background-color            : black;
-border-top                  : 5px solid rgb(209,0,177);
-box-shadow                  : 0 -25px 45px rgb(209,0,177);
+background-color            : var(--dark-background);
+border-top                  : 5px solid var(--primary-text-color) ;
+box-shadow                  : 0 -25px 45px var(--primary-text-color) ;
 height                      : 80em;
 transform                   : scale(1.26) rotateX(80deg);
 position                    : absolute;

@@ -11,7 +11,7 @@
         </ul>
     </div>
     <nav class="navbar navbar-expand-* navbar-dark bg-dark">
-        <a href="./index.php" class="btn btn-outline-light" <?php if ($nav_en_cours == 'Hackerman') {echo ' id="en-cours"';} ?>>HackerMan</a>
+        <a href="./index.php" class="btn btn-outline-light" <?php if ($nav_en_cours == 'Hackerman') {echo ' id="en-cours"';} ?>><img class="logoImage" src="./images/logo hackerman.png"></a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
             <span class="navbar-toggler-icon"></span>
         </button>

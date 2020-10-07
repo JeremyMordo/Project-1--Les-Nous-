@@ -3,7 +3,7 @@
         <img class="img-fluid col" alt="A photo of HackerMan" src="./images/hackerman.png">
         <img class="img-fluid2 col" alt="A photo of HackerMan-mini" src="./images/hackerman-mini.jpeg">
         <ul class="headerUl col">
-            <li><h1>Jacky HackerMan</h1></li>
+            <li><h1 class="superTitle">Jacky HackerMan</h1></li>
             <br>
             <li>I'm a professional</li>
             <li>Call me : 666-666-6666</li>

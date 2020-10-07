@@ -1,35 +1,92 @@
-.imgproject{
-    width : 300px;
-    height: auto;
-}
+/*<-------Projects page--------->*/
 
-
-
-article {
+.articleprojet {
     display: flex;
     justify-content: center;
-   
-        
 }
 
-
 section{
-    max-width: 40%;
-    margin:40px;
+    max-width: 30%;
+    margin:60px;
 }
 
 .div-img{
     text-align: center;
 }
 
-h3{
+.h3projects{
     text-align: center;
     margin-top: 10px;
 }
 
 .text-project{
     text-align: justify;
+    text-indent: 1em;
 }
+
+.btn{
+    background-color: rgb(223, 19, 189);
+    border: rgb(0, 0, 0);
+}
+
+
+.pagetitle{
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*Style pictures*/
+
+.imgproject{
+    width : 300px;
+    height: auto;
+}
+
+.gifsecret{
+    width: 300px;
+    height: 169px;
+  
+}
+
+.password {
+    width:90%;
+}
+
+.img-thor{
+    margin: 50px;
+}
+
+/*<-------Secret page--------->*/
+
+
+.mire{
+    text-align: center;
+}
+
+.mireImg{
+    width:100%;
+    height:100%;
+    display:block;
+}
+
+.mirevideo{
+    width:100%;
+    height:100%;
+    display:block;
+}
+
+.img-thor{
+    margin : 25px;
+}
+
+.div-secret{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/*<-------Responsive page--------->*/
+
+/*Project page*/
 
 
 @media screen and (max-width: 540px){

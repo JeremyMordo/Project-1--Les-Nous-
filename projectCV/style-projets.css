@@ -4,13 +4,7 @@
 .articleprojet {
     display: flex;
     justify-content: center;
-
-.imgproject{
-    width                     : 300px;
-    height                    : auto;
 }
-
-
 article {
     display                   : flex;
     justify-content           : center;
@@ -37,7 +31,7 @@ section{
     text-indent: 1em;
 }
 
-.btn{
+.btn-mdp{
     background-color: rgb(223, 19, 189);
     border: rgb(0, 0, 0);
 }

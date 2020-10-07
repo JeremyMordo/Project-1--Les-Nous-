@@ -13,11 +13,11 @@
     
     <div class="container container-fluid">
 
-        <!----------------------------header--------------------------->
+        <!--header-->
         <?php $nav_en_cours ='Curriculum';?>
         <?php include "./header.php";?> 
 
-        <!---------------------------main--------------------------->
+        <!--main-->
         <main>
         <div class="wrapper row">
             <svg height="320" width="400" class="logo-triangle">
@@ -51,7 +51,7 @@
             <section class="background" id="toRemove" onclick="remove(this)">
             <div class="titleSection"> 
                     <h2>Skills</h2>
-                    <button class="btn-curriculum" type="button"><img class="crossButton" src="images/crossButton.png"></button>
+                    <button class="btn-curriculum" type="button"><img class="crossButton" alt="cross button" src="images/crossButton.png"></button>
                 </div>
                 <div class="containerSkill">
                     <div class="skills">
@@ -83,7 +83,7 @@
             </div>
         </main>
 
-        <!---------------------------footer--------------------------->
+        <!--footer-->
         <?php include "./footer.php";?>
     </div>
 

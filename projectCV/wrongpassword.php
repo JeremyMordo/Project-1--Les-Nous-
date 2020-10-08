@@ -32,56 +32,10 @@
                 <polygon points="0,0 400,0 200,300" stroke="#36e2f8" stroke-width="3" />
             </svg>
     <div class="grid"></div>
+</div>
     
-  
-<?php
+   <div class="mire"><a href="./projects.php"><img class="mireImg" src="images/mire1.png" alt="mire"></a></div>
 
-if ($_POST ['mot_de_passe'] == 'Password')
-{  
-?>  
-    <article class="secret-article">
-        <div id="div-clignotante">
-            <h1 class ="pagetitle">PROJET ULTRA TOP SECRET</h1>
-        </div>
-<script>
-var clignotement = function(){ 
-   if (document.getElementById('div-clignotante').style.visibility=='visible'){ 
-      document.getElementById('div-clignotante').style.visibility='hidden'; 
-   } 
-   else{ 
-   document.getElementById('div-clignotante').style.visibility='visible'; 
-   } 
-}; 
-periode = setInterval(clignotement, 600); 
-</script> 
-
-        <div>
-                <h2 class ="pagetitle">Le MARTEAU De THOR</h2>
-        </div>
-        <div class="div-img img-thor background">
-        <img class="imgproject" alt="Thor Hackermann" src="images/thor.gif">      
-        </div>
-        <div class ="div-secret">
-                <p>Utiliser la puissance du marteau de Thor pour améliorer le voyage temporel.</p>
-                <p>Ce projet s'articule en 3 points :</p>
-                <ul>
-                    <li>Etape 1 : Voler les slips.</li>
-                    <li>Etape 2 : ###############</li>
-                    <li>Etape 3 : Faire du profit.</li>                            
-                </ul>
-        </div>
-    </article>
-    </div> 
-<?php
-}
-else {
-    header('Location: wrongpassword.php');
-    exit();
-?> 
-   <!-- <div class="mire"><a href="./projects.php"><img class="mireImg" src="images/mire1.png" alt="mire"></a></div>-->
-<?php   
-}
-?>
 
 <?php include "./footer.php";?>
  

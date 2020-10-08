@@ -39,7 +39,7 @@
 if ($_POST ['mot_de_passe'] == 'Password')
 {  
 ?>  
-    <article class="secret-article">
+    <article  class="secret-article">
         <div id="div-clignotante">
             <h1 class ="pagetitle">PROJET ULTRA TOP SECRET</h1>
         </div>
@@ -58,7 +58,7 @@ periode = setInterval(clignotement, 600);
         <div>
                 <h2 class ="pagetitle">Le MARTEAU De THOR</h2>
         </div>
-        <div class="div-img img-thor background">
+        <div id="no-opacity5"class="div-img img-thor background">
         <img class="imgproject" alt="Thor Hackermann" src="images/thor.gif">      
         </div>
         <div class ="div-secret">

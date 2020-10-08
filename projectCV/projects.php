@@ -39,7 +39,7 @@
             <h2 class ="pagetitle h2project">De la mort qui tue</h2>
     </div>
     <article class="articleprojet">
-        <section class="background">
+        <section class="background" id="no-opacity1">
             <div class="div-img">
                 <img class="imgproject" alt="Time machine Hackermann" src="images/timemachine.gif">
             </div>
@@ -48,7 +48,7 @@
                 <p class="text-project">Grâce à mes doigts de fée et à mon clavier de transport, j'ai réussi à hacker le temps et à envoyer Kung Fury dans le passé.</p>
             </div>
         </section>
-        <section class="background">
+        <section class="background" id="no-opacity2" >
             <div class="div-img">
                 <img class="imgproject" alt="Hackermann Robot" src="images/robot.gif">
             </div>
@@ -59,18 +59,18 @@
         </section>
     </article>
     <article class="articleprojet">
-        <section class="background">
-            <div class="div-img">
-                <img class="imgproject" alt="Phone Hackermann" src="images/telephone.gif">
+        <section class="background" id="no-opacity3">
+            <div class="div-img" >
+                <img class="imgproject"  alt="Phone Hackermann" src="images/telephone.gif">
             </div>
             <div><h3 class="h3projects">Fabrication de téléphone</h3></div>
             <div>
                 <p class="text-project">J'ai conçu de mes 10 doigts un téléphone portable qui a une capacité de 645 canaux, 10 numéros abrégés et un vérrouillage électronique.</p>
             </div>
         </section>
-        <section class="background">
-            <div class="div-img">
-            <img class="gifsecret" alt="Secret Project Hackermann" src="images/topsecret2.gif">
+        <section class="background" id="no-opacity4">
+            <div class="div-img" >
+            <img class="gifsecret"  alt="Secret Project Hackermann" src="images/topsecret2.gif">
             </div>
             <div><h3 class="h3projects">Projet top secret</h3></div>
             <div>

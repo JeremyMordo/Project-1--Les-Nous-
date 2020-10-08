@@ -4,7 +4,6 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <link rel="stylesheet" href="./style-index+hobbies.css">
 <link rel="stylesheet" href="./style-projets.css">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet"> 
 <title>Mes projets</title>
 </head>
 
@@ -33,13 +32,12 @@
                 <polygon points="0,0 400,0 200,300" stroke="#36e2f8" stroke-width="3" />
             </svg>
             <div class="grid"></div>
-        
     <div class ="titre-projects col">
-        <h1 class ="pagetitle">Mes Projets</h1>
-            <h2 class ="pagetitle h2project">De la mort qui tue</h2>
+        <h1>Mes Projets<h1>
+            <h2>De la mort qui tue<h2>
     </div>
     <article class="articleprojet">
-        <section class="background">
+        <section>
             <div class="div-img">
                 <img class="imgproject" alt="Time machine Hackermann" src="images/timemachine.gif">
             </div>
@@ -48,7 +46,7 @@
                 <p class="text-project">Grâce à mes doigts de fée et à mon clavier de transport, j'ai réussi à hacker le temps et à envoyer Kung Fury dans le passé.</p>
             </div>
         </section>
-        <section class="background">
+        <section>
             <div class="div-img">
                 <img class="imgproject" alt="Hackermann Robot" src="images/robot.gif">
             </div>
@@ -59,7 +57,7 @@
         </section>
     </article>
     <article class="articleprojet">
-        <section class="background">
+        <section>
             <div class="div-img">
                 <img class="imgproject" alt="Phone Hackermann" src="images/telephone.gif">
             </div>
@@ -68,7 +66,7 @@
                 <p class="text-project">J'ai conçu de mes 10 doigts un téléphone portable qui a une capacité de 645 canaux, 10 numéros abrégés et un vérrouillage électronique.</p>
             </div>
         </section>
-        <section class="background">
+        <section>
             <div class="div-img">
             <img class="gifsecret" alt="Secret Project Hackermann" src="images/topsecret2.gif">
             </div>
@@ -81,8 +79,8 @@
                     <label for="inputPassword2" class="sr-only">Password</label>
                     <input type="password" class="form-control" id="inputPassword2" name="mot_de_passe" placeholder="Password">
                 </div>
-                <div class="col align-self-center div-btn">
-                <button type="submit" class="btn-mdp btn">Confirm identity</button>
+                <div class="col align-self-center">
+                <button type="submit" class="btn btn-secondary">Confirm identity</button>
                 </div>
             </form>         
         </section>

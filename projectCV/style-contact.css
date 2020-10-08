@@ -1,30 +1,190 @@
-.formtext {
-    font                : Courrier;
-    font-size           : 0.8em;
-    line-height         : 0.6em;
-  }
   .screen {
-    border              : solid 2px blue;
     background-image    : url(".src/back.jpeg");
     display             : flex;
     justify-content     : center;
     z-index: 2;
   }
   .windowform {
+    overflow: hidden;
     display             : inline-block;
     background-color    : black;
-    border              : solid 2px red;
     margin              : 10px;
-    color               : #dedb5b;
     border              : ridge 4pt lightgray;
     border-top          : solid 22px lightgrey;
   }
-  .windowhack {
-    background-color    : black;
+  .formtext {
+    font                : Courrier;
+    font-size           : 0.8em;
+    line-height         : 0.6em;
     color               : #dedb5b;
-    display             : none;
-    z-index             : 4;
+    
   }
+  
+  .windowhack {
+    border              : ridge 4pt lightgray;
+    border-top          : solid 22px lightgrey;
+    padding-top: 30px;
+    margin-top: 20px;
+    display: flexbox;
+    flex-wrap: wrap;
+    position: absolute;
+    opacity: 0;
+    background-color:    RGB(6,6,0);
+    width: 50%;
+    height: 95%;
+    color               : #dedb5b;
+    z-index             : 9;
+    animation-name: skull; 
+    animation-delay: 2000ms;
+    animation-fill-mode: forwards;
+    animation-duration: 300ms;  
+    animation-timing-function: ease-out; 
+    display: none;
+  }
+
+  .hacktext{
+    
+    font: Courrier;
+    font-size           : 0.8em;
+    text-align: center;
+    animation-name: textroll;
+    animation-fill-mode: both;
+    animation-duration: 2s;  
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+
+  }
+  .skull{
+    display: flex;
+    justify-self: center;
+    margin-left: 35%;
+    margin-right: 35%;
+    width: 30%;
+    overflow: hidden;
+    
+  }
+  
+  .popdiv1{
+    left: 20px;
+    top: 20px;
+    border              : ridge 4pt lightgray;
+    border-top          : solid 22px lightgrey;
+    position: absolute;
+    opacity: 0;
+    z-index: 5;
+    animation-name: popdiv1;
+    animation-delay: 1200ms;
+    animation-fill-mode: forwards;
+    animation-duration: 300ms;  
+    animation-timing-function: ease-out; 
+    display: none;
+  }
+
+  .popdiv2{
+    right: 30px;
+    bottom: 230px;
+    border              : ridge 4pt lightgray;
+    border-top          : solid 22px lightgrey;
+    position: absolute;
+    opacity: 0;
+    z-index: 6;
+    animation-name: popdiv2;
+    animation-delay: 800ms;
+    animation-fill-mode: forwards;
+    animation-duration: 300ms;  
+    animation-timing-function: ease-out; 
+    display: none;
+  }
+  .popdiv3{
+    left: 70px;
+    bottom: 50px;
+    /* border              : ridge 4pt lightgray;
+    border-top          : solid 22px lightgrey; */
+    position: absolute;
+    opacity: 0;
+    z-index: 7;
+    animation-name: popdiv3;
+    animation-delay: 1000ms; 
+    animation-fill-mode: forwards;
+    animation-duration: 300ms;  
+    animation-timing-function: ease-out; 
+    display: none;
+  }
+  .popdiv4{
+    top: 150px;
+    right:5px;
+    border              : ridge 4pt lightgray;
+    border-top          : solid 22px lightgrey;
+    position: absolute;
+    opacity: 0;
+    z-index: 8;
+    animation-name: popdiv4;
+    animation-delay: 1500ms;
+    animation-fill-mode: forwards;
+    animation-duration: 300ms;  
+    animation-timing-function: ease-out; 
+    display: none;
+  }
+  @keyframes skull{
+    from{
+    
+          opacity: 0;
+          transform: scale(0.3);
+        }
+      to{
+          opacity: 1;
+          transform: scale(1);
+      
+        }
+    }
+    @keyframes popdiv1{
+      from{
+      
+            opacity: 0;
+            transform: scale(0.3);
+          }
+        to{
+            opacity: 1;
+            transform: scale(1);
+        
+          }
+      } 
+      @keyframes popdiv2{
+        from{
+        
+              opacity: 0;
+              transform: scale(0.3);
+            }
+          to{
+              opacity: 1;
+              transform: scale(1);
+          
+            }
+        } 
+        @keyframes popdiv3{
+          from{
+          
+                opacity: 0;
+                transform: scale(0.3);
+              }
+            to{
+                opacity: 1;
+                transform: scale(1);
+            
+              }
+          } 
+          @keyframes popdiv4{
+            from{
+            
+                  opacity: 0;
+                  transform: scale(0.3);
+                }
+              to{
+                  opacity: 1;
+                  transform: scale(1);
+              
+                }
+            } 
   .programList {
     list-style          : none;
     text-indent         : -40px;
@@ -32,7 +192,11 @@
   .command {
     border              : 0;
     background-color    : black;
+    font: Courrier;
+    color: #dedb5b;
+    font-size: 0.8em;
   }
+  /*instance des input*/
   #an15 {
     display             : none;
   }
@@ -51,3 +215,161 @@
   #describe {
     display             : none;
   }
+/*-------------------------*/
+  #an1 {
+        margin-top: 3px; 
+        animation-name:an1; 
+        animation-duration:100ms; 
+        animation-fill-mode: forwards;
+        animation-delay: 50ms;
+        opacity: 0;
+       }
+  #an2 { 
+        animation-name:an1; 
+        animation-duration:100ms; 
+        animation-fill-mode: forwards;
+        animation-delay: 100ms;
+        opacity: 0;
+  }
+  #an3 { 
+    animation-name:an1; 
+    animation-duration:100ms; 
+    animation-fill-mode: forwards;
+    animation-delay: 150ms;
+    opacity: 0;
+}
+#an4 { 
+  animation-name:an1; 
+  animation-duration:100ms; 
+  animation-fill-mode: forwards;
+  animation-delay: 200ms;
+  opacity: 0;
+}
+#an5 { 
+  animation-name:an1; 
+  animation-duration:100ms; 
+  animation-fill-mode: forwards;
+  animation-delay: 250ms;
+  opacity: 0;
+}
+#an6 { 
+  animation-name:an1; 
+  animation-duration:100ms; 
+  animation-fill-mode: forwards;
+  animation-delay: 300ms;
+  opacity: 0;
+}
+#an7 { 
+  animation-name:an1; 
+  animation-duration:100ms; 
+  animation-fill-mode: forwards;
+  animation-delay: 350ms;
+  opacity: 0;
+}
+#an8 { 
+  animation-name:an1; 
+  animation-duration:100ms; 
+  animation-fill-mode: forwards;
+  animation-delay: 400ms;
+  opacity: 0;
+}
+#an13 { 
+  animation-name:an1; 
+  animation-duration:100ms; 
+  animation-fill-mode: forwards;
+  animation-delay: 650ms;
+  opacity: 0;
+}
+#an14 { 
+  animation-name:an1; 
+  animation-duration:100ms; 
+  animation-fill-mode: forwards;
+  animation-delay: 700ms;
+  opacity: 0;
+}
+
+
+/*Animation du form*/
+@keyframes an1{ from { opacity: 0;} to{ opacity: 1;}}
+@keyframes an2{ from { opacity: 0;} to{ opacity: 1;}}
+@keyframes an3{ from { opacity: 0;} to{ opacity: 1;}}
+@keyframes an4{ from { opacity: 0;} to{ opacity: 1;}}
+@keyframes an5{ from { opacity: 0;} to{ opacity: 1;}}
+@keyframes an6{ from { opacity: 0;} to{ opacity: 1;}}
+@keyframes an7{ from { opacity: 0;} to{ opacity: 1;}}
+@keyframes an8{ from { opacity: 0;} to{ opacity: 1;}}
+@keyframes an13{ from { opacity: 0;} to{ opacity: 1;}}
+@keyframes an14{ from { opacity: 0;} to{ opacity: 1;}}
+/*---------------------*/
+  @keyframes textroll{
+    from {
+
+      color: rgb(0,0,255);
+
+    }
+    50% {
+
+      color: rgb(0,255,0);
+
+    }
+    to {
+
+      color: rgb(255, 0, 0);
+
+    }
+
+
+  }
+
+  .hackedlist{
+
+    border              : ridge 4pt lightgray;
+    border-top          : solid 22px lightgrey;
+    top: 90px;
+    right: 300px; 
+    font: Courrier;
+    font-size:0.5em;
+    line-height: 1.5em;
+    position: absolute;
+    opacity: 0;
+    background-color:    RGB(6,6,0);
+    width: 25%;
+    height: 95%;
+    color               : #dedb5b;
+    z-index             : 10;
+    animation-name: hackedlist; 
+    animation-delay: 2200ms;
+    animation-fill-mode: forwards;
+    animation-duration: 300ms;  
+    animation-timing-function: ease-out; 
+    /* display: none; */
+
+
+  }
+  .hackedlistTitle{
+    margin-top: 20px;
+    font: Courrier;
+    color: #dedb5b;
+    font-size: 2em;
+
+  }
+  .hackedlistContent{
+
+    font: Courrier;
+    color: #dedb5b;
+    font-size: 1em;
+
+  }
+
+  @keyframes hackedlist{
+    from{
+    
+          opacity: 0;
+          transform: scale(0.3);
+        }
+      to{
+          opacity: 1;
+          transform: scale(1);
+      
+        }
+    } 

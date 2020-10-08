@@ -45,12 +45,12 @@
                             <p class= formtext id=an7>00792dax 01234efx 00778cbx 00304fcx 02055aex</br> </p>
                             <p class= formtext id=an8>unpacking kebab.tar</br></p>
                             <p class= formtext id=an13>unpacking complete... launch form sequence</p></br>
-                            <form action="hack.php" method="post" class="form-example"id="form">
+                            <form action="" method="post" class="form-example"id="form">
                                 <ul>
                                     <li class= programList><p class= formtext id=an14>enter your name: </p><input class=command id=name name="name" placeholder=">"></li>
                                     <li class= programList><p class= formtext id=an15>enter your email</p><input class=command id=mail name="mail" placeholder=">"></li>
                                     <li class= programList><p class= formtext id=an16>enter the name of your company</p><input class=command id=company name="company" placeholder=">"></li>
-                                    <li class= programList><p class= formtext id=an17>describe your company project</p><input class=command id=describe name="describe" ></li>                             
+                                    <li class= programList><p class= formtext id=an17>describe your company project</p><input class=command id=describe name="description" ></li>                             
                                 </ul>
                               </form>       
                         </div>
@@ -72,6 +72,35 @@
                         </div>
                         <div class=popdiv4 id=popdiv4>
                             <img class=hackpopup4 id="pop4" src="./images/hack4.gif">
+                        </div>
+                        <div class=hackedlist id=hackedlist>
+                            <p class=hackedlistTitle>Liste des entreprise hackés</p>
+                            <p class=hackedlistContent>company name: placeholder</p>
+                            <script>
+                            function getIpAdress() {
+                            let ipHacked1 = Math.floor(Math.random()*255) + 1;
+                            let ipHacked2 = Math.floor(Math.random()*255) + 1;
+                            let ipHacked3 = Math.floor(Math.random()*255) + 1;
+                            let ipHacked4 = Math.floor(Math.random()*255) + 1;    
+                            var h = document.createElement("P");
+                            var t = document.createTextNode("Adresse ip:"+ipHacked1.toString() +"." + ipHacked2.toString() + "."+ ipHacked3.toString()+"."+ ipHacked4.toString());
+                            h.appendChild(t);
+                            document.getElementById("hackedlist").appendChild(h);
+                            }
+                            getIpAdress();
+
+                            function getTheMoney() {
+                            let moneyHacked = Math.floor(Math.random()*10000000) + 1;    
+                            var h = document.createElement("P");
+                            var t = document.createTextNode("Argent hacké: " + moneyHacked.toString() + "$");
+                            h.appendChild(t);
+                            document.getElementById("hackedlist").appendChild(h);
+                            }
+                            getTheMoney();
+                            </script>
+                            <p class=hackedlistContent>contact: placholder text</p>
+                            <p class=hackedlistContent>email: placholder text</p>
+                            <p class=hackedlistContent>message: placholder text</p>
                         </div>      
                 </div>
         </div>
@@ -79,7 +108,7 @@
     <?php include "./footer.php";?>
 </div>
 <script src="src/index.js"></script>
-<script src="./animation.js"></script>
+<script src="./hack.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

@@ -6,17 +6,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./style-index+hobbies.css">
     <link rel="stylesheet" href="./style-curriculum.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet"> 
     <title>Curriculum</title>
 </head>
 <body>
     
     <div class="container container-fluid">
 
-        <!----------------------------header--------------------------->
+        <!--header-->
         <?php $nav_en_cours ='Curriculum';?>
         <?php include "./header.php";?> 
 
-        <!---------------------------main--------------------------->
+        <!--main-->
         <main>
         <div class="wrapper row">
             <svg height="320" width="400" class="logo-triangle">
@@ -50,7 +51,7 @@
             <section class="background" id="toRemove" onclick="remove(this)">
             <div class="titleSection"> 
                     <h2>Skills</h2>
-                    <button class="btn-curriculum" type="button"><img class="crossButton" src="images/crossButton.png"></button>
+                    <button class="btn-curriculum" type="button"><img class="crossButton" alt="cross button" src="images/crossButton.png"></button>
                 </div>
                 <div class="containerSkill">
                     <div class="skills">
@@ -82,7 +83,7 @@
             </div>
         </main>
 
-        <!---------------------------footer--------------------------->
+        <!--footer-->
         <?php include "./footer.php";?>
     </div>
 

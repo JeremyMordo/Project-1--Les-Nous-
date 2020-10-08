@@ -3,7 +3,7 @@
         <img class="img-fluid col" alt="A photo of HackerMan" src="./images/hackerman.png">
         <img class="img-fluid2 col" alt="A photo of HackerMan-mini" src="./images/hackerman-mini.jpeg">
         <ul class="headerUl col">
-            <li class="text-danger"><h1>Jacky HackerMan</h1></li>
+            <li><h1 class="superTitle">Jacky HackerMan</h1></li>
             <br>
             <li>I'm a professional</li>
             <li>Call me : 666-666-6666</li>
@@ -11,12 +11,12 @@
         </ul>
     </div>
     <nav class="navbar navbar-expand-* navbar-dark bg-dark">
-        <a href="./index.php" class="btn btn-outline-light" <?php if ($nav_en_cours == 'Hackerman') {echo ' id="en-cours"';} ?>>HackerMan</a>
+        <a href="./index.php" class="btn btn-outline-light" <?php if ($nav_en_cours == 'Hackerman') {echo ' id="en-cours"';} ?>><img class="logoImage" src="./images/logo hackerman.png"></a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarMenu">
-            <ul class="navbar-nav">
+            <ul class="nav nav-pills navbar-right">
                 <li class="nav-item" >
                     <a href="./curriculum.php" class="btn btn-outline-light" <?php if ($nav_en_cours == 'Curriculum') {echo ' id="en-cours"';} ?>>Curriculum</a>
                 </li>

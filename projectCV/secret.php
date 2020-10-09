@@ -59,7 +59,7 @@ periode = setInterval(clignotement, 600);
                 <h2 class ="pagetitle">Le MARTEAU De THOR</h2>
         </div>
         <div id="no-opacity5"class="div-img img-thor background">
-        <img class="imgproject" alt="Thor Hackermann" src="images/thor.gif">      
+        <img class="imgproject gif-thor" alt="Thor Hackermann" src="images/thor.gif">      
         </div>
         <div class ="div-secret">
                 <p>Utiliser la puissance du marteau de Thor pour améliorer le voyage temporel.</p>

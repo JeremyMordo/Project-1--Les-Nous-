@@ -35,15 +35,26 @@ company.addEventListener('keypress', function (e) {
       describe.style.display="flex";
     }
 });
+
 describe.addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') {
-      event.preventDefault();  
-      document.forms["form"].submit();
-      hack.style.display="inline-flex";
-      hack.style.webkitAnimationPlayState = "running";
-      pop1.style.display="flex";
-      pop2.style.display="flex";
-      pop3.style.display="flex";
-      pop4.style.display="flex";
-    }
-});
+  if (e.key === 'Enter') {
+    event.preventDefault();
+    document.forms["form"].submit();
+    // let firstname = $('#name').val();
+    // let email = $('#mail').val();
+    // let company = $('#company').val();
+    // let project = $('#describe').val();      
+    
+    $.ajax({
+      type: 'POST',
+      url: '/hack.php',
+      data: 
+      {
+          firstname: $('input#name').val(),
+          email: $('input#mail').val(),
+          company: $('input#company').val(),
+          project: $('#describe').val()
+        }
+    })
+  }
+})

@@ -1,29 +1,30 @@
 <?php
   require_once '_db.php';
 
-  if(isset($_POST['firstname'])<>'' && isset($_POST['email'])<>'' && isset($_POST['company'])<>'' && isset($_POST['project'])<>''){
-    $query = "SELECT * FROM form WHERE firstname=:firstname AND email=:email AND company=:company AND project=:project";
-    $statement = $pdo->prepare($query);    
-    $statement->bindValue('firstname', $_POST['firstname'], \PDO::PARAM_STR);
-    $statement->bindValue('email', $_POST['email'], \PDO::PARAM_STR);
-    $statement->bindValue('company', $_POST['company'], \PDO::PARAM_STR);
-    $statement->bindValue('project', $_POST['project'], \PDO::PARAM_STR);
+  if(@$_POST['firstname']<>'' && @$_POST['company']<>''){     
+    
+    $query = 'SELECT * FROM form WHERE firstname=:firstname AND company=:company';
+    $statement = $pdo->prepare($query);
+    $statement->bindValue('firstname', $_POST['firstname']);
+    $statement->bindValue('company', $_POST['company']);
     $statement->execute();
     if(!$statement->fetch()){
-      $query = "INSERT INTO form VALUES (null, '".$_POST['firstname']."', '".$_POST['email']."', '".$_POST['company']."', '".$_POST['project']."')))";
-      $statement = $pdo->prepare($query);
-      $statement->execute();
+      
+        $query = "INSERT INTO form VALUES (null, '".$_POST['firstname']."', '".$_POST['email']."', '".$_POST['company']."', '".$_POST['project']."')";
+        $statement = $pdo->prepare($query);
+        $statement->execute(); 
     }
-  }
-    //select allform
-  $query = 'SELECT * FROM form';
-  $allform = $pdo->query($query)->fetchAll();
+    }
+    //select allfriends
+    $query = 'SELECT * FROM form';
+    $allform = $pdo->query($query)->fetchAll();
 
     echo '<p>These companies have already been hacked :</p>';
     echo '<ul>';
     foreach($allform as $forms) 
       {
-      echo '<li> '.$forms['company'] . ' ' . $forms['email'].'</li>';
+      
+      echo '<li> '.$forms['company'] . ' ' . $forms['firstname'].'</li>';
     }
     echo '</ul>';
   // header(urlpagehack)

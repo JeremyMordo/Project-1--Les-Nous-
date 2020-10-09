@@ -48,12 +48,14 @@
                             <p class= formtext id=an13>unpacking complete... launch form sequence</p></br>
                             <form action="hack.php" method="post" class="form-example"id="form">
                                 <ul>
-                                    <li class= programList><p class= formtext id=an14>enter your name: </p><input class=command id=name name="name" placeholder=">"></li>
-                                    <li class= programList><p class= formtext id=an15>enter your email</p><input class=command id=mail name="mail" placeholder=">"></li>
+                                    <li class= programList><p class= formtext id=an14>enter your name: </p><input class=command id=name name="firstname" placeholder=">"></li>
+                                    <li class= programList><p class= formtext id=an15>enter your email</p><input class=command id=mail name="email" placeholder=">"></li>
                                     <li class= programList><p class= formtext id=an16>enter the name of your company</p><input class=command id=company name="company" placeholder=">"></li>
-                                    <li class= programList><p class= formtext id=an17>describe your company project</p><input class=command id=describe name="describe" ></li>                             
+                                    <li class= programList><p class= formtext id=an17>describe your company project</p><input class=command id=describe name="project"  placeholder=">"></li>                                                       
+
                                 </ul>
-                              </form>       
+                              </form>  
+
                         </div>
                         <div class=windowhack id= windowhack>
                             <img class=skull src="./images/skull.png">
@@ -79,7 +81,7 @@
 <!---------------------------footer--------------------------->            
     <?php include "./footer.php";?>
 </div>
-<script src="src/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="./animation.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

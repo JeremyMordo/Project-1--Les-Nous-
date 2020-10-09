@@ -78,6 +78,7 @@ padding: 0;
 	padding: 0;
 	margin:0;
 	width: 40%;
+	color : var(--light-text-color);
 }
 .windowbackHobbie1, .windowbackHobbie2, .windowbackHobbie3{
 	flex-wrap: nowrap;
@@ -95,7 +96,7 @@ padding: 0;
     display                     : flex;
     justify-content             : space-between;
 }
-.btn-curriculum {
+.btn-hobbie {
     background-color            : var(--secondary-text-color);
     border-color                : var(--light-background );
     width                       : 65px;
@@ -112,7 +113,7 @@ padding: 0;
 	align-items: center;
 	padding-bottom: 1em;
 }
-h2 {
+h4 {
     color                       : var(--light-text-color);
     background-color            : var(--secondary-text-color);
     font-style                  : bold;

@@ -36,8 +36,8 @@
         <div class="windowbackHobbies col justify-content-flex-start">
             <section class="background windowbackHobbie1 row justify-content-flex-start" id="toRemove" onclick="remove(this)">
                 <div class="titleSection"> 
-                    <h2>Curling</h2>
-                    <button class="btn-curriculum" type="button"><img class="crossButton" src="images/crossButton.png"></button>
+                    <h4>Curling</h4>
+                    <button class="btn-hobbie" type="button"><img class="crossButton" src="images/crossButton.png"></button>
                 </div>
                     <div class ="curling">
                         <img src="./images/curling.gif" width=250em height=200em>
@@ -46,18 +46,18 @@
             </section>
             <section class="background windowbackHobbie2 row justify-content-flex-start" id="toRemove" onclick="remove(this)">
                 <div class="titleSection"> 
-                    <h2>Video Games</h2>
-                    <button class="btn-curriculum" type="button"><img class="crossButton" src="images/crossButton.png"></button>
+                    <h4>Video Games</h4>
+                    <button class="btn-hobbie" type="button"><img class="crossButton" src="images/crossButton.png"></button>
                 </div>
                     <div class ="videogames">
-                        <img src="./images/jeuxvideo.gif" width=250em height=200em>
                         <p class="para"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, sed earum nemo blanditiis dolores tempore iure aliquid amet necessitatibus placeat quibusdam excepturi aliquam quae eveniet nam debitis! Autem, adipisci fugiat.</p>
+                        <img src="./images/jeuxvideo.gif" width=250em height=200em>
                     </div>
             </section>
             <section class="background windowbackHobbie3 row justify-content-flex-start" id="toRemove" onclick="remove(this)">
                 <div class="titleSection"> 
-                    <h2>Cooking</h2>
-                    <button class="btn-curriculum" type="button"><img class="crossButton" src="images/crossButton.png"></button>
+                    <h4>Cooking</h4>
+                    <button class="btn-hobbie" type="button"><img class="crossButton" src="images/crossButton.png"></button>
                 </div>
                     <div class ="cooking">
                         <img src="./images/cuisine.gif" width=250em height=200em>

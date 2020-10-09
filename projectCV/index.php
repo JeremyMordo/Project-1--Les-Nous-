@@ -63,7 +63,7 @@
                     </a>
                 </div>
                 <div class="card card4 col-md-6 col-12">
-                   <a href="./contact.php">
+                    <a href="./contact.php">
                         <button class="btn btn-contact" type="button"><img alt="contact link" src="images/contact.png">
                             <div class="card-body">
                                 <h5 class="card-title">Contact</h5>

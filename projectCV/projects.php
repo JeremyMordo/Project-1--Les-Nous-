@@ -58,7 +58,7 @@
             </div>
         </section>
     </article>
-    <article class="articleprojet">
+    <article class="articleprojet article2">
         <section class="background" id="no-opacity3">
             <div class="div-img" >
                 <img class="imgproject"  alt="Phone Hackermann" src="images/telephone.gif">
